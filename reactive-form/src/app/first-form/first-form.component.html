@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>User Login Form</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f2f2f2;
+		}
+		.container {
+			margin: 50px auto;
+			width: 400px;
+			padding: 20px;
+			background-color: #fff;
+			box-shadow: 0px 0px 10px #888;
+			border-radius: 10px;
+		}
+		h1 {
+			text-align: center;
+			font-size: 36px;
+			color: #333;
+			margin-bottom: 30px;
+		}
+		input[type=text], input[type=password] {
+			width: 100%;
+			padding: 12px 20px;
+			margin: 8px 0;
+			display: inline-block;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			box-sizing: border-box;
+		}
+		button {
+			background-color: #4CAF50;
+			color: white;
+			padding: 14px 20px;
+			margin: 8px 0;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+			width: 100%;
+			font-size: 18px;
+			text-transform: uppercase;
+		}
+		button:hover {
+			background-color: #45a049;
+		}
+		.cancelbtn {
+			background-color: #f44336;
+		}
+		.imgcontainer {
+			text-align: center;
+			margin: 24px 0 12px 0;
+			position: relative;
+		}
+		img.avatar {
+			width: 40%;
+			border-radius: 50%;
+		}
+		.container form {
+			border: 3px solid #f1f1f1;
+			margin-top: 30px;
+			padding: 20px;
+		}
+		span.psw {
+			float: right;
+			padding-top: 16px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>User Login Form</h1>
+		<form action="/login" method="POST">
+			<div class="imgcontainer">
+				<img src="https://www.w3schools.com/howto/img_avatar2.png" alt="Avatar" class="avatar">
+			</div>
+			<label for="uname"><b>Username</b></label>
+			<input type="text" placeholder="Enter Username" name="uname" required>
+
+			<label for="psw"><b>Password</b></label>
+			<input type="password" placeholder="Enter Password" name="psw" required>
+
+			<button type="submit">Login</button>
+			<label>
+				<input type="checkbox" checked="checked" name="remember"> Remember me
+			</label>
+		</form>
+	</div>
+</body>
+</html>
